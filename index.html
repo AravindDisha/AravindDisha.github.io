@@ -13,9 +13,9 @@
 
       This should be the same across all pages.
      -->
-    <link rel="icon" href="./assets/images/1311.png" />
-		<title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <link rel="icon" href="./assets/images/icon.jpg" />
+		<title>Disha Aravind</title>
+    <meta name="description" content="A portfolio for Disha.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -29,9 +29,9 @@
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Portfolio Title</span>
+        <span class="nav-title">Disha Aravind</span>
          <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <a class="button" href="mailto:disha.aravind@gatech.edu">
           <span class="button-text">Contact Me</span>
         </a>
       </a>
@@ -50,9 +50,9 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
+          <img src="./assets/images/1311.png" class="portfolio-header-image" id="my_pic">
+          <a class="no-underline" target="_blank" href="https://github.com/AravindDisha">
+            <span class="image-caption">My GitHub Profile</span>
           </a>
         </div>
 
@@ -65,8 +65,9 @@
           -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+              <span class="main-title">Hey, I'm Disha Aravind</span>
+              <br/>
+              <div class="body-text">I’m currently a MSCS student at Georgia Tech, specializing in Social Computing. <br/>My interest is in looking for empirical ways to study and define social phenomena, especially using social media. I do research at the <a href="http://tid.gatech.edu/">Technologies and International Development Lab</a> where I work on <a href = "http://tid.gatech.edu/projects/covid/">Community-Based COVID-19 Social Media Monitoring</a>. </div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
@@ -85,8 +86,8 @@
       <div id="about-section">
         <span class="subheader-text">My Background / About Me</span>
         <div class="about-section-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">Prior to starting my graduate studies, I worked in Microsoft for 2 years. I worked on features like Autofill Custom Info, Date of Birth Field and Data-Lists</div>
+          <!-- <div class="body-text">I am also interested in Algorithms and Performance. I was a member of the Performance team at Microsoft Edge and onboarded performace benchmarking for many Edge teams.</div> -->
         </div>
       </div>
 
@@ -119,17 +120,18 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="./assets/images/workinprogress.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Project Name</div>
               <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
-          <div class="project-card">
+
+          <!-- <div class="project-card">
             <img src="./assets/images/code.jpeg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Project Name</div>
@@ -139,8 +141,9 @@
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
-          </div>
-          <div class="project-card">
+          </div> -->
+
+          <!-- <div class="project-card">
             <img src="./assets/images/sketchbook.jpeg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
@@ -150,7 +153,7 @@
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

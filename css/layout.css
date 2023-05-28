@@ -117,6 +117,9 @@ body {
 
 
 /* Project Pages */
+#my_pic:hover {
+  content: url("../assets/images/my_image.jpg");
+}
 
 #project-header {
   display: flex;
