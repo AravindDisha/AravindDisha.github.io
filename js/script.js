@@ -7,7 +7,6 @@ if (document.getElementById('my-work-link')) {
 const page = document.querySelector('.page');
 const toggle = page.querySelector('.toggle-input');
 const toggleIcon = page.querySelector('.toggle-icon');
-const toggleArrowIcons = page.querySelectorAll('.right-arrow-icon');
 
 // set theme and localStorage on page load
 setCheckedState();
@@ -44,15 +43,9 @@ function toggleIconTheme() {
   if (page.classList.contains('light')) {
     toggleIcon.src = './assets/icons/moon.svg';
     toggleIcon.alt = 'Switch to Dark Mode';
-    toggleArrowIcons.forEach((arrowIcon) => {
-      arrowIcon.src='./assets/icons/arrow-right.svg';
-    });
   } else {
     toggleIcon.src = './assets/icons/sun.svg';
     toggleIcon.alt = 'Switch to Light Mode';
-    toggleArrowIcons.forEach((arrowIcon) => {
-      arrowIcon.src='./assets/icons/arrow-right-light.svg';
-    });
   }
 }
 
