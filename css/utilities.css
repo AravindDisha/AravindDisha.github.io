@@ -37,6 +37,14 @@ a.icon-link:hover {
   left: 0;
 }
 
+.navbar-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
 .nav-title-link {
   color: black;
   text-decoration: none;

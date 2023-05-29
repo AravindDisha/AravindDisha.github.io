@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
 
-    <!-- 
+<head>
+  <meta charset="utf-8">
+
+  <!-- 
       TODO
 
       Upload your Unemployable (or whatever photo you like) to the assets/images folder
@@ -13,91 +14,104 @@
 
       This should be the same across all pages.
      -->
-    <link rel="icon" href="./assets/images/icon.jpg" />
-		<title>Disha Aravind</title>
-    <meta name="description" content="A portfolio for Disha.">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./assets/images/icon.jpg" />
+  <title>Disha Aravind</title>
+  <meta name="description" content="A portfolio for Disha.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/toggle.css">
 
-		<script defer src="./js/script.js"></script>
-	</head>
-	<body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Disha Aravind</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body class="page dark">
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="nav-title-link" href="./index.html">
+      <span class="nav-title">Disha Aravind</span>
+      <div class="navbar-right">
         <a class="button" href="mailto:disha.aravind@gatech.edu">
           <span class="button-text">Contact Me</span>
         </a>
-      </a>
-    </div>
+        <div class="toggle">
+          <input type="checkbox" id="theme" class="toggle-input" checked>
+          <label for="theme" class="toggle-label">
+            <img src="./assets/icons/moon.svg" alt="Dark mode" class="toggle-icon">
+          </label>
+        </div>
+      </div>
+    </a>
+  </div>
 
-    <!-- MAIN PAGE CONTENT -->
-    <div id="main-content">
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content">
 
-      <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <!-- 
+    <!-- PORTFOLIO HEADER -->
+    <div id="portfolio-header">
+      <div id="portfolio-header-image-container">
+        <!-- 
             TODO
 
             - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image" id="my_pic">
-          <a class="no-underline" target="_blank" href="https://github.com/AravindDisha">
-            <span class="image-caption">My GitHub Profile</span>
-          </a>
-        </div>
+        <img src="./assets/images/1311.png" class="portfolio-header-image" id="my_pic">
+      </div>
 
-          <!-- 
+      <!-- 
             TODO
 
             - Change the main-title to whatver you want
             - Change the body-text after that to a quick introduction to what you do
             - Edit the button text if you feel like it. It will link to the projects section below.
           -->
-        <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hey, I'm Disha Aravind</span>
-              <br/>
-              <div class="body-text">I’m currently a MSCS student at Georgia Tech, specializing in Social Computing. <br/>My interest is in looking for empirical ways to study and define social phenomena, especially using social media. I do research at the <a href="http://tid.gatech.edu/">Technologies and International Development Lab</a> where I work on <a href = "http://tid.gatech.edu/projects/covid/">Community-Based COVID-19 Social Media Monitoring</a>. </div>
-            </div>
-            <a class="button" id="my-work-link">
-              <span class="button-text">Check out my projects</span> 
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+      <div id="portfolio-header-text-container">
+        <div class="header-text">
+          <span class="main-title">Hey, I'm Disha Aravind</span>
+          <br />
+          <div class="body-text">I’m currently a MSCS student at Georgia Tech, specializing in Social Computing.
+            <br />My interest is in looking for empirical ways to study and define social phenomena, especially using
+            social media. I do research at the <a class="link" href="http://tid.gatech.edu/">Technologies and
+              International
+              Development Lab</a> where I work on <a class="link"
+              href="http://tid.gatech.edu/projects/covid/">Community-Based
+              COVID-19 Social Media Monitoring</a>.
+          </div>
         </div>
+        <a class="button" id="my-work-link">
+          <span class="button-text">Check out my projects</span>
+          <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+        </a>
       </div>
+    </div>
 
-      <!-- ABOUT SECTION -->
-      <!-- 
+    <!-- ABOUT SECTION -->
+    <!-- 
         TODO
 
         - Change the subheader-text to whatever header you want
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
-      <div id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
-        <div class="about-section-content">
-          <div class="body-text">Prior to starting my graduate studies, I worked in Microsoft for 2 years. I worked on features like Autofill Custom Info, Date of Birth Field and Data-Lists</div>
-          <!-- <div class="body-text">I am also interested in Algorithms and Performance. I was a member of the Performance team at Microsoft Edge and onboarded performace benchmarking for many Edge teams.</div> -->
-        </div>
+    <div id="about-section">
+      <span class="subheader-text">My Background / About Me</span>
+      <div class="about-section-content">
+        <div class="body-text">Prior to starting my graduate studies, I worked in Microsoft for 2 years. I worked on
+          features like Autofill Custom Info, Date of Birth Field and Data-Lists</div>
+        <!-- <div class="body-text">I am also interested in Algorithms and Performance. I was a member of the Performance team at Microsoft Edge and onboarded performace benchmarking for many Edge teams.</div> -->
       </div>
+    </div>
 
-      <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
-        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+    <!-- PROJECTS / MY WORK SECTION -->
+    <div id="my-work-section">
+      <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+      <span class="subheader-text">My Work / My Projects</span>
 
-        <div class="projects-container">
-          <!-- 
+      <div class="projects-container">
+        <!-- 
             TODO
 
             This is where the project cards live. Here's a base level project card for you to copy:
@@ -119,19 +133,20 @@
                 - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
-          <div class="project-card">
-            <img src="./assets/images/workinprogress.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+        <div class="project-card">
+          <img src="./assets/images/workinprogress.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Project Name</div>
+            <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et.
+              Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
           </div>
+          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
 
-          <!-- <div class="project-card">
+        <!-- <div class="project-card">
             <img src="./assets/images/code.jpeg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Project Name</div>
@@ -143,7 +158,7 @@
             </a>
           </div> -->
 
-          <!-- <div class="project-card">
+        <!-- <div class="project-card">
             <img src="./assets/images/sketchbook.jpeg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
@@ -154,37 +169,38 @@
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div> -->
-        </div>
       </div>
     </div>
+  </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
+  <!-- FOOTER -->
+  <div id="footer">
+    <!-- 
         TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
+    <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+      <image src="./assets/icons/instagram.svg" class="footer-icon" />
+    </a>
+    <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
+    <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+      <image src="./assets/icons/twitter.svg" class="footer-icon" />
+    </a>
+    <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
+    <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <image src="./assets/icons/mail.svg" class="footer-icon" />
+    </a>
+  </div>
 
-	</body>
+</body>
+
 </html>
