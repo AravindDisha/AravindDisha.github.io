@@ -75,10 +75,7 @@ body {
   gap: 34px;
 }
 
-
-
-
-/* Project Section */
+/* Work Section */
 
 #my-work-section {
   display: flex;
@@ -86,36 +83,74 @@ body {
   gap: 16px;
 }
 
+.work-container {
+  display: flex;
+  gap: 34px 16px;
+  flex-wrap: wrap;
+}
+
+/* Work Cards */
+
+.work-card {
+  max-width: calc((100% - 32px) / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.work-card-text-container {
+  flex-direction: column;
+  display: flex;
+  gap: 16px
+}
+
+.work-image {
+  width: 100%;
+  max-height: 500px;
+  max-width: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2%;
+  margin-bottom: 10%
+}
+
+.work-icon-container {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+
+/* Project Section */
+
 .projects-container {
   display: flex;
   gap: 34px 16px;
   flex-wrap: wrap;
 }
 
-    /* Project Cards */
+/* Project Cards */
 
-    .project-card {
-      max-width: calc((100% - 32px) / 3);
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
+.project-card {
+  max-width: calc((100% - 32px) / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
-    .project-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px
-    }
+.project-card-text-container {
+  flex-direction: column;
+  display: flex;
+  gap: 16px
+}
 
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-
-
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2%;
+}
 
 /* Project Pages */
 #my_pic:hover {
@@ -145,35 +180,35 @@ body {
   gap: 34px;
 }
 
-    /* Project Gallery */
+/* Project Gallery */
 
-    #project-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+#project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .project-gallery-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 34px 16px;
-    }
+.project-gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px 16px;
+}
 
-    .gallery-image-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+.gallery-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .gallery-image-container.half-width {
-      width: calc((100% - 16px) / 2);
-    }
+.gallery-image-container.half-width {
+  width: calc((100% - 16px) / 2);
+}
 
-    .gallery-image {
-      width: 100%;
-      height: auto;
-    }
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
 
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
@@ -222,6 +257,3 @@ body {
     max-width: 100%;
   }
 }
-
-
-

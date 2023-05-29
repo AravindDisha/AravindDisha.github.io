@@ -75,7 +75,7 @@
           <br />
           <div class="body-text">I’m currently a MSCS student at Georgia Tech, specializing in Social Computing.
             <br />My interest is in looking for empirical ways to study and define social phenomena, especially using
-            social media. I do research at the <a class="link" href="http://tid.gatech.edu/">Technologies and
+            social media. <br />I do research at the <a class="link" href="http://tid.gatech.edu/">Technologies and
               International
               Development Lab</a> where I work on <a class="link"
               href="http://tid.gatech.edu/projects/covid/">Community-Based
@@ -97,18 +97,65 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
     <div id="about-section">
-      <span class="subheader-text">My Background / About Me</span>
+      <span class="subheader-text subtitle">My Background</span>
       <div class="about-section-content">
-        <div class="body-text">Prior to starting my graduate studies, I worked in Microsoft for 2 years. I worked on
-          features like Autofill Custom Info, Date of Birth Field and Data-Lists</div>
-        <!-- <div class="body-text">I am also interested in Algorithms and Performance. I was a member of the Performance team at Microsoft Edge and onboarded performace benchmarking for many Edge teams.</div> -->
+        <div class="body-text">Prior to starting my graduate studies, I worked in Microsoft for 2 years. I developed
+          features like:</div>
+      </div>
+    </div>
+
+    <div id="my-work-section">
+      <span class="subheader-text subtitle">My Work</span>
+      <div class="work-container">
+
+        <div class="work-card">
+          <div class="work-content">
+            <img src="./assets/images/CustomInfoLight.jpeg" class="work-image feature1">
+            <div class="work-card-text-container">
+              <div class="subheader-text work-title">Autofill Custom Info</div>
+              <div class="body-text work-card-text">Autofill Custom Info is a Microsoft Edge feature that allows users
+                to define and fill their own information. It is available in edge://settings</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-content">
+            <img src="./assets/images/DOBLight.png" class="work-image feature2">
+            <div class="work-card-text-container">
+              <div class="subheader-text work-title">Date of Birth Field</div>
+              <div class="body-text work-card-text">This feature is a part of Edge Autofill's Basic Informtion section
+                and allows users to save, extract and fill their date of birth in forms.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-content">
+            <img src="./assets/images/CAAGraph.png" class="work-image">
+            <div class="work-card-text-container">
+              <div class="subheader-text work-title">CAA Twitter Analysis</div>
+              <div class="body-text work-card-text">Analyzed Tweets about the Citizenship Amendment Act to find metrics
+                to define propaganda. </div>
+            </div><br />
+            <div class="work-icon-container">
+              <a class="icon-link" target="_blank" href="https://github.com/AravindDisha/CAA-Twitter-Analysis">
+                <image src="./assets/icons/github.svg" class="footer-icon" />
+              </a>
+              <a class="icon-link" target="_blank" href="./assets/pdfs/Published Paper.pdf">
+                <image src="./assets/icons/publication.svg" class="footer-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <!-- PROJECTS / MY WORK SECTION -->
     <div id="my-work-section">
       <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-      <span class="subheader-text">My Work / My Projects</span>
+      <span class="subheader-text subtitle">My Projects</span>
 
       <div class="projects-container">
         <!-- 
@@ -133,12 +180,13 @@
                 - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
+
         <div class="project-card">
-          <img src="./assets/images/workinprogress.png" class="project-image">
+          <img src="./assets/images/ProjectPeach.png" class="project-image">
           <div class="project-card-text-container">
-            <div class="subheader-text project-title">Project Name</div>
-            <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et.
-              Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            <div class="subheader-text project-title">Social Media Analysis</div>
+            <div class="body-text project-card-text">Data Extraction and Analysis to try and understand reasons for
+              COVID testing hesitance in underserved communities.</div>
           </div>
           <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
             <span class="button-text">Read More</span>
@@ -146,56 +194,96 @@
           </a>
         </div>
 
-        <!-- <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div> -->
+        <div class="project-card">
+          <img src="./assets/images/Activism.jpg" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Activism and Identity</div>
+            <div class="body-text project-card-text">Conducted interviews and surveys to understand how identity affects
+              participation and experience in Activists.</div>
+          </div>
+          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
 
-        <!-- <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div> -->
+        <div class="project-card">
+          <img src="./assets/images/matrimonystudy.jpg" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Online Community Study</div>
+            <div class="body-text project-card-text">We interviewed and analyzed BharatMatrimony and other indian
+              matrimonial sites to understand how high-trust connections are formed on the internet.</div>
+          </div>
+          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/images/Planner.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Dayjour</div>
+            <div class="body-text project-card-text">Developed and iterated on a planner app for college students.
+              Redesigned multiple features based on user interviews and worked on wearable planning products.</div>
+          </div>
+          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/images/PythonLogo.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Python Educational Tool</div>
+            <div class="body-text project-card-text">Created a tool that uses embodied learning to teach users Python
+              and basic programming paradigms. Conducted user studies to improve the same.</div>
+          </div>
+          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/images/DanceGen.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Classical Dance Generator</div>
+            <div class="body-text project-card-text">Trained a model to learn bharatnatyam steps from youtube videos and
+              generate new steps.</div>
+          </div>
+          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/images/PoetIdentifier.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Poetic Style Identifier</div>
+            <div class="body-text project-card-text">Used open source data to create a model capable to identifying an
+              author's style using their vocabulary, rhyme scheme and other features.</div>
+          </div>
+          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+
       </div>
     </div>
   </div>
 
   <!-- FOOTER -->
   <div id="footer">
-    <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-
-        This should be the same across all pages.
-      -->
     <a class="icon-link" target="_blank" href="https://github.com/AravindDisha">
       <image src="./assets/icons/github.svg" class="footer-icon" />
     </a>
-    <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
     <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/disha-aravind/">
       <image src="./assets/icons/linkedin.svg" class="footer-icon" />
     </a>
-    <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
     <a class="icon-link" href="mailto:dishaaravind1998@gmail.com">
       <image src="./assets/icons/mail.svg" class="footer-icon" />
     </a>

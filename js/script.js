@@ -8,6 +8,9 @@ const page = document.querySelector('.page');
 const toggle = page.querySelector('.toggle-input');
 const toggleIcon = page.querySelector('.toggle-icon');
 
+const feature1Img = page.querySelector('.feature1');
+const feature2Img = page.querySelector('.feature2');
+
 // set theme and localStorage on page load
 setCheckedState();
 
@@ -43,9 +46,13 @@ function toggleIconTheme() {
   if (page.classList.contains('light')) {
     toggleIcon.src = './assets/icons/moon.svg';
     toggleIcon.alt = 'Switch to Dark Mode';
+    feature1Img.src = './assets/images/CustomInfoDark.jpeg';
+    feature2Img.src = './assets/images/DOBDark.png';
   } else {
     toggleIcon.src = './assets/icons/sun.svg';
     toggleIcon.alt = 'Switch to Light Mode';
+    feature1Img.src = './assets/images/CustomInfoLight.jpeg';
+    feature2Img.src = './assets/images/DOBLight.png';
   }
 }
 

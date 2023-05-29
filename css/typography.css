@@ -47,3 +47,11 @@ body {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
+
+.work-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

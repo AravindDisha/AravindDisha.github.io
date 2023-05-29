@@ -3,18 +3,23 @@
   0% {
     transform: rotate(0deg);
   }
+
   75% {
     transform: rotate(0deg);
   }
+
   80% {
     transform: rotate(-5deg);
   }
+
   85% {
     transform: rotate(5deg);
   }
+
   95% {
     transform: rotate(-5deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -71,7 +76,7 @@
   color: var(--text-main);
 }
 
-.nav-title-link{
+.nav-title-link {
   color: var(--text-main);
 }
 
@@ -180,4 +185,8 @@ a.button {
 
 .transparency:hover {
   opacity: 0.7;
+}
+
+.subtitle {
+  font-size: 30px;
 }
