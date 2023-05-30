@@ -15,7 +15,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.subtitle {
+  font-size: 30px;
+}
 
 
 /* Main Page Layout */
@@ -168,6 +170,9 @@ body {
 .project-header-image {
   width: 100%;
   height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 2%;
 }
 
 #project-details {
@@ -182,6 +187,9 @@ body {
   gap: 34px;
 }
 
+embed {
+  width: 100%;
+}
 /* Project Gallery */
 
 #project-gallery {

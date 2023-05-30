@@ -1,6 +1,6 @@
 if (document.getElementById('my-work-link')) {
   document.getElementById('my-work-link').addEventListener('click', () => {
-    document.getElementById('my-work-section').scrollIntoView({behavior: "smooth"})
+    document.getElementById('my-work-section').scrollIntoView({ behavior: "smooth" })
   })
 }
 
@@ -44,18 +44,23 @@ function replaceClass() {
 
 function toggleIconTheme() {
   // Replace icons not able to be targeted by css variables
+  const filename = window.location.href.split('/').pop();
   if (page.classList.contains('light')) {
     toggleIcon.src = './assets/icons/moon.svg';
     toggleIcon.alt = 'Switch to Dark Mode';
-    feature1Img.src = './assets/images/CustomInfoDark.jpeg';
-    feature2Img.src = './assets/images/DOBDark.png';
-    feature3Img.src = './assets/images/CAAGraph2.png';
+    if (filename.indexOf("index") > -1) {
+      feature1Img.src = './assets/images/CustomInfoDark.jpeg';
+      feature2Img.src = './assets/images/DOBDark.png';
+      feature3Img.src = './assets/images/CAAGraph2.png';
+    }
   } else {
     toggleIcon.src = './assets/icons/sun.svg';
     toggleIcon.alt = 'Switch to Light Mode';
-    feature1Img.src = './assets/images/CustomInfoLight.jpeg';
-    feature2Img.src = './assets/images/DOBLight.png';
-    feature3Img.src = './assets/images/CAAGraph.png';
+    if (filename.indexOf("index") > -1) {
+      feature1Img.src = './assets/images/CustomInfoLight.jpeg';
+      feature2Img.src = './assets/images/DOBLight.png';
+      feature3Img.src = './assets/images/CAAGraph.png';
+    }
   }
 }
 
