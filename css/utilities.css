@@ -81,10 +81,6 @@ a.button:hover {
   cursor: pointer;
 }
 
-a[target="_blank"].button:hover {
-  text-decoration: none;
-}
-
 a[disabled] {
   pointer-events: none;
 }
