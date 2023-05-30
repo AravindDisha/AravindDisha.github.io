@@ -118,6 +118,7 @@ body {
   width: 100%;
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 
@@ -246,6 +247,10 @@ body {
   .project-card {
     max-width: calc((100% - 16px) / 2);
   }
+
+  .work-card {
+    max-width: calc((100% - 16px) / 2);
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and below) */
@@ -255,6 +260,10 @@ body {
   }
 
   .project-card {
+    max-width: 100%;
+  }
+
+  .work-card {
     max-width: 100%;
   }
 }
