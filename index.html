@@ -52,14 +52,23 @@
     <!-- PORTFOLIO HEADER -->
     <div id="portfolio-header">
       <div id="portfolio-header-image-container">
-
         <img src="./assets/images/1311.png" class="portfolio-header-image" id="my_pic">
       </div>
 
       <div id="portfolio-header-text-container">
         <div class="header-text">
           <span class="main-title">Hey, I'm Disha Aravind</span>
-          <br />
+          <div class="portfolio-icon-container">
+            <a class="icon-link" target="_blank" href="https://github.com/AravindDisha">
+              <image src="./assets/icons/github.svg" class="footer-icon" />
+            </a>
+            <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/disha-aravind/">
+              <image src="./assets/icons/linkedin.svg" class="footer-icon" />
+            </a>
+            <a class="icon-link" href="mailto:dishaaravind1998@gmail.com">
+              <image src="./assets/icons/mail.svg" class="footer-icon" />
+            </a>
+          </div>
           <div class="body-text">I’m currently a MSCS student at Georgia Tech, specializing in Social Computing.
             <br />My interest is in looking for empirical ways to study and define social phenomena, especially using
             social media. <br />I do research at the <a class="link" href="http://tid.gatech.edu/">Technologies and
@@ -169,10 +178,15 @@
             <div class="body-text project-card-text">Conducted interviews and surveys to understand how identity affects
               participation and experience in Activists.</div>
           </div>
-          <a class="button" href="activism.html">
-            <span class="button-text">Read More</span>
-            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
-          </a>
+          <div class="work-icon-container">
+            <a class="button" href="activism.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+            </a>
+            <a class="icon-link" target="_blank" href="./assets/pdfs/Role of Identity in Social Activism.pdf">
+              <image src="./assets/icons/publication.svg" class="footer-icon" />
+            </a>
+          </div>
         </div>
 
         <div class="project-card">
@@ -182,10 +196,15 @@
             <div class="body-text project-card-text">We interviewed users and studied BharatMatrimony and other indian
               matrimonial sites to understand how high-trust connections are formed on the internet.</div>
           </div>
-          <a class="button" href="online-community.html">
-            <span class="button-text">Read More</span>
-            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
-          </a>
+          <div class="work-icon-container">
+            <a class="button" href="online-community.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+            </a>
+            <a class="icon-link" target="_blank" href="./assets/pdfs/Bharat Matrimony - Community Study Paper.pdf">
+              <image src="./assets/icons/publication.svg" class="footer-icon" />
+            </a>
+          </div>
         </div>
 
         <div class="project-card">
@@ -195,23 +214,15 @@
             <div class="body-text project-card-text">Developed and iterated on a planner app for college students.
               Redesigned multiple features based on user interviews and worked on wearable planning products.</div>
           </div>
-          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
-            <span class="button-text">Read More</span>
-            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="./assets/images/PythonLogo.png" class="project-image">
-          <div class="project-card-text-container">
-            <div class="subheader-text project-title">Python Educational Tool</div>
-            <div class="body-text project-card-text">Created a tool that uses embodied learning to teach users Python
-              and basic programming paradigms. Conducted user studies to improve the same.</div>
+          <div class="work-icon-container">
+            <a class="button" href="dayjour.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+            </a>
+            <a class="icon-link" target="_blank" href="./assets/pdfs/Final Prototype and Process Book.pdf">
+              <image src="./assets/icons/publication.svg" class="footer-icon" />
+            </a>
           </div>
-          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
-            <span class="button-text">Read More</span>
-            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
-          </a>
         </div>
 
         <div class="project-card">
@@ -221,10 +232,27 @@
             <div class="body-text project-card-text">Trained a model to learn bharatnatyam steps from youtube videos and
               generate new steps.</div>
           </div>
-          <a class="button" href="./assets/pdfs/Dance_Gen_draft_paper.pdf">
-            <!-- "./project-pages/project-template.html"> -->
-            <span class="button-text">Read More</span>
-            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          <div class="work-icon-container">
+            <a class="button" disabled href="#">
+              <span class="button-text">Work in Progress</span>
+              <image src="./assets/icons/loading.svg" class="right-arrow-icon" />
+            </a>
+            <a class="icon-link" target="_blank" href="./assets/pdfs/Dance_Gen_draft_paper.pdf">
+              <image src="./assets/icons/publication.svg" class="footer-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/images/PythonLogo.png" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Python Educational Tool</div>
+            <div class="body-text project-card-text">Created a tool that uses embodied learning to teach users Python
+              and basic programming paradigms. Conducted user studies to improve the same.</div>
+          </div>
+          <a class="button" disabled href="#">
+            <span class="button-text">Work in Progress</span>
+            <image src="./assets/icons/loading.svg" class="right-arrow-icon" />
           </a>
         </div>
 
@@ -235,9 +263,9 @@
             <div class="body-text project-card-text">Used open source data to create a model capable to identifying an
               author's style using their vocabulary, rhyme scheme and other features.</div>
           </div>
-          <a class="button" href="#"> <!-- "./project-pages/project-template.html"> -->
-            <span class="button-text">Read More</span>
-            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          <a class="button" disabled href="#">
+            <span class="button-text">Work in Progress</span>
+            <image src="./assets/icons/loading.svg" class="right-arrow-icon" />
           </a>
         </div>
 
