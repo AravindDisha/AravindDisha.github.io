@@ -1,6 +1,6 @@
 if (document.getElementById('my-work-link')) {
   document.getElementById('my-work-link').addEventListener('click', () => {
-    document.getElementById('my-work-section').scrollIntoView({ behavior: "smooth" })
+    document.getElementById('my-projects-section').scrollIntoView({ behavior: "smooth" })
   })
 }
 
@@ -75,3 +75,16 @@ function isTrue(value) {
 
 // Toggle theme any time the state of the checkbox changes
 toggle.addEventListener('change', toggleTheme);
+
+function expandText(elem) {
+  // Expand or hide text with details
+  if (elem.innerHTML === "Read more") {
+    elem.previousSibling.classList.add("unhide");
+    elem.previousSibling.style.display = "block";
+    elem.innerHTML = "Read less";
+  } else {
+    elem.previousSibling.classList.remove("unhide");
+    elem.previousSibling.style.display = "none";
+    elem.innerHTML = "Read more";
+  }
+}

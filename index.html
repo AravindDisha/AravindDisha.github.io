@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="./css/typography.css">
   <link rel="stylesheet" href="./css/utilities.css">
   <link rel="stylesheet" href="./css/toggle.css">
+  <link rel="stylesheet" href="./css/timeline.css">
 
   <script defer src="./js/script.js"></script>
 </head>
@@ -87,10 +88,47 @@
 
     <!-- ABOUT SECTION -->
     <div id="about-section">
-      <span class="subheader-text subtitle">My Background</span>
-      <div class="about-section-content">
-        <div class="body-text">Prior to starting my graduate studies, I worked in Microsoft for 2 years. I developed
-          features like:</div>
+      <span class="subheader-text" id="subtitle">My Background</span>
+      
+        <div class="timeline-container">
+          <div class="timeline-body">
+            <ul>
+              <li style="--accent-color:#9eb98d">
+                <div class="date body-text">May 23 - Present</div>
+                <div class="title body-text">Research Assistant @ Technologies and International Development Lab</div>
+                <div class="descr body-text">Working on <i>Social Media Analysis for COVID-19 Testing in Atlanta</i>. Experimented with multiple models like <i>LDA, HDP, BERT</i> with different clustering methods. Currently working on a <i>BERTopic + Chat GPT</i> model.</div>
+                <div class="descr body-text moredetails">Created infrastructure to extract large number of Facebook, Instagram and Twitter posts automatically. Currently working on analysing reasons for COVID testing hesitance. Using COM-B framework to analyze social media data.</div><div class="descr body-text expand" onclick="expandText(this)">Read more</div>
+              </li>
+              <li style="--accent-color:#d9546a">
+                <div class="date body-text">Jan 23 - May 23</div>
+                <div class="title body-text">Graduate Teaching Assistant @ Georgia Tech</div>
+                <div class="descr body-text">GTA for <a class="link" href="https://santoshv.github.io/2023CS6550/contalgos.html">6550 Continuous Algorithms: Optimization and Sampling</a> taught by <a class="link" href="https://faculty.cc.gatech.edu/~vempala/">Prof. Santosh Vempala</a>. Contributed to his <a class="link" href="https://github.com/YinTat/optimizationbook">textbook</a>.</div>
+              </li>
+              <li style="--accent-color:#464646">
+                <div class="date body-text">Apr 22 - Aug 22</div>
+                <div class="title body-text">Software Engineer @ Microsoft Edge, Web-Assist Team</div>
+                <div class="descr body-text">Shipped feature <i>Autofill from Outlook</i> which allows users to complete Web-Checkin in a single click and automatically extracts flight details from Outook. Added <i>Digital Signature to Microsoft Edge's PDF interface.</i></div>
+                  <div class="descr body-text moredetails">Member of the <i>Performance team</i> and <i>Telemetry team</i>. Onboarded performace tests for many Edge teams and added novel telemetry to estimate feature precision. Used performace tests to reduce memory footprint by 24%</div><div class="descr body-text expand" onclick="expandText(this)">Read more</div>
+              </li>
+              <li style="--accent-color:#cdb4db">
+                <div class="date body-text">Jul 20 - Apr 22</div>
+                <div class="title body-text">Software Engineer @ Microsoft Edge, Autofill Team</div>
+                <div class="descr body-text">Developed features like <i>Custom Data Autofill, Date of Birth field, Data-list view</i>. Conducted A/B tests to verify increased user adoption. Shipped <i>Autofill for Linux</i>. </div>
+                  <div class="descr body-text moredetails">Was a member of the <i>Accessibility Team</i>. Reviewed many features to ensure compliance. Solved long-time accessibility bugs and introduced new narrator interface for Edge-specific pop-ups.</div><div class="descr body-text expand" onclick="expandText(this)">Read more</div>
+              </li>
+              <li style="--accent-color:#4CADAD">
+                <div class="date body-text">Jun 19 - Jun 20</div>
+                <div class="title body-text">Software Intern @ Microsoft Edge, Educational Team</div>
+                <div class="descr body-text">Created an Assignment Helper for students using a <i>Flask server</i> with a ML model trained to pick up sub-topics from Bing using <i>NLP</i>. <br/><br/>Developed an caption generator that provides closed captions for any video played in Edge using <i>Azure Cognitive Services</i>. Worked on Chrome audio buffer to reduce video lag.</div>
+              </li>
+              <li style="--accent-color:#ffa3b1">
+                <div class="date body-text">Jun 18 - Jul 18</div>
+                <div class="title body-text">Software Development Intern @ Renalyx Health Systems</div>
+                <div class="descr body-text">Created Pump calibration modules for Dialysis Machine. Used a <i>JTAG interface</i> to debug the module.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <a class="button" target=”_blank” href="./assets/pdfs/Disha Aravind Resume.pdf">
         <span class="button-text">My Resume</span>
@@ -100,7 +138,7 @@
 
     <!-- MY WORK SECTION -->
     <div id="my-work-section">
-      <span class="subheader-text subtitle">My Work</span>
+      <span class="subheader-text" id="subtitle">My Work</span>
       <div class="work-container">
 
         <div class="work-card">
@@ -148,8 +186,8 @@
     </div>
 
     <!-- PROJECTS SECTION -->
-    <div id="my-work-section">
-      <span class="subheader-text subtitle">My Projects</span>
+    <div id="my-projects-section">
+      <span class="subheader-text" id="subtitle">My Projects</span>
 
       <div class="projects-container">
 
